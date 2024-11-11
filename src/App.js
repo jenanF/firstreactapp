@@ -1,5 +1,8 @@
 import './App.css';
 import bakery from './images/bakery.jpg'
+import products from './products.js';
+
+let pie = products[2].name.indexOf('P');
 
 function App() {
   return (
@@ -10,18 +13,34 @@ function App() {
 
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 20, marginTop: 20 }}>
 
-        <div style={{ width: 200, height: 300 }}>
-          <img height={200} width={150} src='https://www.rainbownourishments.com/wp-content/uploads/2023/01/vegan-chocolate-chip-muffins-1..jpg'></img>
-          <h4>Vegan Chocolate Chip Muffins</h4>
-          <p>1.000 KD</p>
+        {products.map((item) => <div style={{ width: 200, height: 300 }}>
+
+          <img height={200} width={150} src={(item.image)}></img>
+
+          <h4>{(item.name)}</h4>
+          <p>{(item.price)} KD</p>
+
+        </div>)}
+
+        {/* <div style={{ width: 200, height: 300 }}>
+          <img height={200} width={150} src={(products[0].image)}></img>
+          <h4>{(products[0].name)}</h4>
+          <p>{(products[0].price)} KD</p>
         </div>
 
 
         <div style={{ width: 200, height: 300 }}>
-          <img height={200} width={150} src='https://cravingsjournal.com/wp-content/uploads/2023/08/croissants-4.jpg'></img>
-          <h4>Butter <br /> Croissant</h4>
-          <p>0.800 KD</p>
+          <img height={200} width={150} src={(products[1].image)}></img>
+          <h4>{(products[1].name.slice(0, 6))} <br /> {(products[1].name.slice(6))}</h4>
+          <p>{(products[1].price)} KD</p>
         </div>
+
+        <div style={{ width: 200, height: 300 }}>
+          <img height={200} width={150} src={(products[2].image)}></img>
+          <h4>{(products[2].name.slice(0, pie - 1))} <br /> {(products[2].name.slice(pie))}</h4>
+
+          <p>{(products[2].price)} KD</p>
+        </div> */}
       </div>
     </div>
   );
