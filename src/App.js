@@ -1,8 +1,9 @@
 import './App.css';
 import bakery from './images/bakery.jpg'
 import products from './products.js';
+import Product from './Components/ProductItem.js'
 
-let pie = products[2].name.indexOf('P');
+
 
 function App() {
   return (
@@ -13,15 +14,27 @@ function App() {
 
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 20, marginTop: 20 }}>
 
-        {products.map((item) => <div style={{ width: 200, height: 300 }}>
+        {products.map((item) =>
 
-          <img height={200} width={150} src={(item.image)}></img>
+          <Product />
 
-          <h4>{(item.name)}</h4>
-          <p>{(item.price)} KD</p>
 
-        </div>)}
 
+
+          // <div style={{ width: 200, height: 300 }}>
+
+          //   <img height={200} width={150} src={(item.image)}></img>
+
+          //   <h4>{(item.name)}</h4>
+          //   <p>{(item.price)} KD</p>
+
+          // </div>
+
+        )}
+
+
+        {/////////////////////////////////////////////////////////////////////////////////
+        }
 
         {/* <div style={{ width: 200, height: 300 }}>
           <img height={200} width={150} src={(products[0].image)}></img>
