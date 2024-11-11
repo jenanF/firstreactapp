@@ -22,6 +22,7 @@ function App() {
 
         </div>)}
 
+
         {/* <div style={{ width: 200, height: 300 }}>
           <img height={200} width={150} src={(products[0].image)}></img>
           <h4>{(products[0].name)}</h4>
