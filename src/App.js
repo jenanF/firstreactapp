@@ -14,9 +14,11 @@ function App() {
 
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 20, marginTop: 20 }}>
 
-        {products.map((item) =>
+        <Product />
 
-          <Product />
+
+        {/* {products.map((item) =>
+
 
 
 
@@ -30,7 +32,7 @@ function App() {
 
           // </div>
 
-        )}
+        )} */}
 
 
         {/////////////////////////////////////////////////////////////////////////////////
