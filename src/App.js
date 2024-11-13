@@ -2,6 +2,7 @@ import './App.css';
 import bakery from './images/bakery.jpg'
 import products from './products.js';
 import Product from './Components/ProductItem.js'
+import ProductList from './Components/ProductList.js';
 
 
 
@@ -12,9 +13,14 @@ function App() {
       <p>The Bakery of All Backeries!</p>
       <img src={bakery}></img>
 
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 20, marginTop: 20 }}>
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 20, marginTop: 20 }}>
 
-        <Product />
+        <ProductList items={products} />
+
+
+
+
+        {/* <Product /> */}
 
 
         {/* {products.map((item) =>
