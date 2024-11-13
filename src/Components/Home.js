@@ -10,7 +10,7 @@ const Home = () => {
         <header>
             <div className="App">
                 <h1>Sweet Bites</h1>
-                <p>The Bakery of All Backeries!</p>
+                <p>The Bakery of All Bakeries!</p>
                 <img src={bakery}></img>
 
                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 20, marginTop: 20 }}>
